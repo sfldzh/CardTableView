@@ -114,6 +114,7 @@
 		D639F3E62646420E00EB1275 = {
 			isa = PBXGroup;
 			children = (
+				D639F4452646728200EB1275 /* Classes */,
 				D639F3F12646420E00EB1275 /* CardTableView */,
 				D639F40D2646420F00EB1275 /* cardTests */,
 				D639F4182646420F00EB1275 /* cardUITests */,
@@ -134,7 +135,6 @@
 		D639F3F12646420E00EB1275 /* CardTableView */ = {
 			isa = PBXGroup;
 			children = (
-				D639F4452646728200EB1275 /* Classes */,
 				D639F3F22646420E00EB1275 /* AppDelegate.h */,
 				D639F3F32646420E00EB1275 /* AppDelegate.m */,
 				D639F3F52646420E00EB1275 /* SceneDelegate.h */,
