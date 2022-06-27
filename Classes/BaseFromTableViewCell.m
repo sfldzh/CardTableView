@@ -13,7 +13,7 @@
 
 @implementation BaseFromTableViewCell
 
-- (UIColor *)hex:(int32_t)hex a:(CGFloat)a{
+- (UIColor *)sr_tableView_hex:(int32_t)hex a:(CGFloat)a{
     return [UIColor colorWithRed:((hex & 0xFF0000) >> 16)/255.0 green:((hex & 0xFF00) >> 8)/255.0 blue:(hex & 0xFF)/255.0 alpha:a];
 }
 
@@ -23,13 +23,13 @@
         if (@available(iOS 13.0, *)) {
             _line.backgroundColor = [UIColor colorWithDynamicProvider:^UIColor * _Nonnull(UITraitCollection * _Nonnull traitCollection) {
                 if (traitCollection.userInterfaceStyle == UIUserInterfaceStyleLight) {
-                    return [self hex:0xeeeeee a:1];
+                    return [self sr_tableView_hex:0xeeeeee a:1];
                 }else {
-                    return [self hex:0xffffff a:0.15];
+                    return [self sr_tableView_hex:0xffffff a:0.15];
                 }
             }];
         }else{
-            _line.backgroundColor = [self hex:0xeeeeee a:1];;
+            _line.backgroundColor = [self sr_tableView_hex:0xeeeeee a:1];;
         }
     }
     return _line;
